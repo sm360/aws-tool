@@ -25,7 +25,7 @@ npm install -g .
 ```
 
 ## Commands
-### `connect <name_of_the_app>`
+### Connect
 This command will search for all the apps with the provided name in AWS. Once you select an instance, an SSH session will be launched. Here is a sample command:
 
 ```
