@@ -1,0 +1,29 @@
+{
+  "name": "aws-tool",
+  "version": "1.0.0",
+  "private": true,
+  "keywords": [
+    "infra",
+    "aws-tool"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rivardolivier/aws-tool"
+  },
+  "preferGlobal": true,
+  "bin": {
+    "connect": "connect.js"
+  },
+  "readmeFilename": "Readme.md",
+  "engines": {
+    "node": ">= 0.10.x"
+  },
+  "dependencies": {
+    "aws-sdk": "2.1.4",
+    "colors": "^1.1.2",
+    "inquirer": "^1.1.2",
+    "lodash": "^4.14.1",
+    "q": "^1.4.1",
+    "termtable": "^1.0.2"
+  }
+}
