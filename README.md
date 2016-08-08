@@ -9,6 +9,7 @@ Install the tool on your machine with this command:
 npm install -g .
 
 _Configuration:_
+
  Add a file aws.json in the config folder with those configurations:
 
  {
