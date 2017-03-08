@@ -1,0 +1,10 @@
+{
+	"applications": ["environmentName1", "environmentName1"],
+	"OptionSettings": [
+	  	{
+	    	"OptionName": "Application Healthcheck URL",
+	    	"Namespace": "aws:elasticbeanstalk:application",
+	    	"Value": "/check/state"
+	  	}
+	]
+}
