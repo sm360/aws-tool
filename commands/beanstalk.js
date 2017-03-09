@@ -24,7 +24,7 @@ if(command === 'update') {
   }
 
 	config.applications.forEach(function(applicationName) {
-		elasticBeanstalk.updateEnvironment(config.applications, config.OptionSettings)
+		elasticBeanstalk.updateEnvironment(applicationName, config.OptionSettings)
 			.then(function(successData) {
 				console.log(successData)
 			});
