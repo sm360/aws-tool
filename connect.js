@@ -6,18 +6,17 @@ var ec2 = require('./lib/ec2');
 var io = require('./lib/io');
 var exec = require('./lib/process');
 
-function directConnect(commandType) {
+function directConnect(applicationName) {
 
-    ec2.listApplications(commandType)
+    ec2.listApplications(applicationName)
         .then(io.promptServers)
         .then(exec.spawnSSHProcess);
 }
 
-var commandType = '';
+var applicationName = '';
 var argv = process.argv;
 if (argv.length > 1) {
-    commandType = argv[2];
+    applicationName = argv[2];
 }
 
-
-directConnect(commandType);
+directConnect(applicationName);
