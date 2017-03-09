@@ -1,6 +1,6 @@
 {
   "name": "aws-tool",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "private": true,
   "keywords": [
     "infra",
@@ -12,7 +12,9 @@
   },
   "preferGlobal": true,
   "bin": {
-    "connect": "connect.js"
+    "connect": "commands/connect.js",
+    "beanstalk": "commands/beanstalk.js",
+    "aws-tool-setup": "commands/setup.js"
   },
   "readmeFilename": "Readme.md",
   "engines": {
@@ -24,6 +26,8 @@
     "inquirer": "^1.1.2",
     "lodash": "^4.14.1",
     "q": "^1.4.1",
-    "termtable": "^1.0.2"
+    "sleep": "^5.1.0",
+    "termtable": "^1.0.2",
+    "yargs": "^7.0.1"
   }
 }
