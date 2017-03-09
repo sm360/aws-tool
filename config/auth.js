@@ -9,7 +9,7 @@ const HOME_DIRECTORY = os.homedir();
 const CONFIG_FILE_LOCATION = path.join(HOME_DIRECTORY, '.awstool.conf');
 
 function update(config) {
-  console.log(CONFIG_FILE_LOCATION, JSON.stringify(config));
+
   file.update(CONFIG_FILE_LOCATION, JSON.stringify(config));
 }
 

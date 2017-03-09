@@ -4,6 +4,7 @@
 
 var io = require('../lib/io');
 var elasticBeanstalk = require('../lib/elasticBeanstalk');
+var sleep = require('sleep').msleep;
 
 var argv = require('yargs').argv;
 var command = argv._[0].toLowerCase();
@@ -28,5 +29,6 @@ if(command === 'update') {
 			.then(function(successData) {
 				console.log(successData)
 			});
+		sleep(200)
 	});
 }
