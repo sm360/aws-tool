@@ -12,8 +12,9 @@
   },
   "preferGlobal": true,
   "bin": {
-    "connect": "connect.js",
-    "beanstalk": "beanstalk.js"
+    "connect": "commands/connect.js",
+    "beanstalk": "commands/beanstalk.js",
+    "aws-tool-setup": "commands/setup.js"
   },
   "readmeFilename": "Readme.md",
   "engines": {

@@ -2,9 +2,9 @@
 
 'use strict';
 
-var ec2 = require('./lib/ec2');
-var io = require('./lib/io');
-var exec = require('./lib/process');
+var ec2 = require('../lib/ec2');
+var io = require('../lib/io');
+var exec = require('../lib/process');
 
 function directConnect(applicationName) {
 
