@@ -11,8 +11,8 @@ npm install -g .
 ```
 
 ## Configuration
- In order to connect to AWS API, you will need to add a file named `aws.json` in the `config/` directory.
- Here is the expected format of the configuration:
+ In order to connect to AWS API, you will need run the `aws-tool-setup` command.
+ This command will create `~/.awstool.conf` that will follow this template:
 
 ```
  {
@@ -25,9 +25,23 @@ npm install -g .
 ```
 
 ## Commands
+### aws-tool-setup
+This command will ask you some basic auth information to configure the the client.
+
+```
+aws-tool-setup
+```
+
 ### Connect
 This command will search for all the apps with the provided name in AWS. Once you select an instance, an SSH session will be launched. Here is a sample command:
 
 ```
 connect <name_of_the_app>
+```
+
+### beanstalk
+This command will allow you to update beanstalk environments:
+
+```
+beanstalk update --config <path_of_config_file>
 ```
